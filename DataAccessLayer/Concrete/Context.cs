@@ -12,9 +12,9 @@ namespace DataAccessLayer.Concrete
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("server=DESKTOP-F46V4KP\\MSSQLSERVER1;database=CoreProjeDB;integrated security=true");
+            optionsBuilder.UseSqlServer("server=DESKTOP-F46V4KP\\MSSQLSERVER1;database=CoreProjeDB2;integrated security=true");
         }
-        public DbSet<Experience> Abouts { get; set; }
+        public DbSet<About> Abouts { get; set; }
         public DbSet<Contact> Contacts {  get; set; }
         public DbSet<Experience> Experiences {  get; set; }
         public DbSet<Feature> Features {  get; set; }
